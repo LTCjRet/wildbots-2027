@@ -183,9 +183,9 @@ body{background:#0f1a31;min-height:100vh;display:flex;flex-direction:column}
 </section>
 </div></div>
 <div class="controls">
-<button id="prev" type="button">Previous</button>
+<button id="nav-prev" type="button">Previous</button>
 <span id="count" aria-live="polite">1 / 6</span>
-<button id="next" type="button">Next</button>
+<button id="nav-next" type="button">Next</button>
 <button id="notes-btn" type="button" aria-expanded="false" aria-controls="notes-panel">Show speaker notes</button>
 </div>
 <div id="notes-panel" hidden></div>
@@ -194,7 +194,7 @@ body{background:#0f1a31;min-height:100vh;display:flex;flex-direction:column}
 <script>
 (function(){
  var slides=[].slice.call(document.querySelectorAll('.slide')),i=0,stage=document.getElementById('stage'),frame=document.getElementById('frame');
- var prev=document.getElementById('prev'),next=document.getElementById('next'),count=document.getElementById('count');
+ var prev=document.getElementById('nav-prev'),next=document.getElementById('nav-next'),count=document.getElementById('count');
  var nb=document.getElementById('notes-btn'),np=document.getElementById('notes-panel');
  function fit(){stage.style.transform='scale('+(frame.clientWidth/1920)+')';}
  function show(n){
