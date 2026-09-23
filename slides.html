@@ -1,0 +1,179 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slides — 3329 Wildbots 2027 event selection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--ink:#14213d;--paper:#eef1f5;--card:#ffffff;--orange:#e07a1f;--orange-ink:#9a4d0c;--green:#2a7f6a;--red:#b0321f;--muted:#566175;--line:#d5dbe4}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 'Public Sans',Arial,sans-serif}
+a{color:var(--ink);text-decoration-color:var(--orange);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.site-nav{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;padding:16px clamp(20px,5vw,64px);background:var(--ink);color:#f3f5f9}
+.site-nav a{color:#f3f5f9;text-decoration:none;font-weight:600;font-size:15px}
+.site-nav .brand{font-family:'Oswald',Arial,sans-serif;font-size:22px;font-weight:600;letter-spacing:.5px}
+.site-nav .links{display:flex;flex-wrap:wrap;gap:8px 24px}
+.site-nav .links a[aria-current]{box-shadow:inset 0 -3px 0 var(--orange)}
+.site-nav .links a:hover{color:#ffd2a8}
+
+body{background:#0f1a31;min-height:100vh;display:flex;flex-direction:column}
+.viewer{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px clamp(12px,3vw,40px)}
+.frame{position:relative;width:100%;max-width:calc((100vh - 190px) * 16 / 9);aspect-ratio:16/9;overflow:hidden;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.35)}
+.stage{position:absolute;top:0;left:0;width:1920px;height:1080px;transform-origin:0 0}
+.slide{position:absolute!important;inset:0;width:1920px;height:1080px;overflow:hidden}
+.slide[hidden]{display:none!important}
+.slide h1,.slide h2,.slide h3,.slide p,.slide ol,.slide ul,.slide table{margin:0}
+.slide table{font-size:inherit;line-height:1.3}
+.slide td,.slide th{border-top:none;white-space:normal}
+.notes{display:none}
+.controls{display:flex;align-items:center;gap:16px;margin-top:18px;color:#d4dae5;font-size:15px}
+.controls button{font:600 15px 'Public Sans',Arial,sans-serif;background:#23304f;color:#f3f5f9;border:1px solid #3a4866;border-radius:6px;padding:9px 16px;cursor:pointer}
+.controls button:hover{background:#2f3e63}
+.controls button:disabled,.controls button:disabled:hover{opacity:.4;background:#23304f;cursor:default}
+#notes-panel{max-width:1100px;width:100%;margin-top:16px;background:#1b2745;color:#e3e8f1;border-radius:6px;padding:16px 20px;font-size:16px}
+@media print{
+ @page{size:1920px 1080px;margin:0}
+ body{background:#fff;display:block} .site-nav,.controls,#notes-panel{display:none!important}
+ .viewer{padding:0;display:block} .frame{max-width:none;width:1920px;height:auto;aspect-ratio:auto;overflow:visible;box-shadow:none;border-radius:0}
+ .stage{position:static;transform:none!important;height:auto}
+ .slide,.slide[hidden]{display:flex!important;position:relative!important;page-break-after:always;break-after:page}
+}
+</style></head><body>
+<nav class="site-nav" aria-label="Site"><a class="brand" href="index.html">3329 Wildbots</a><div class="links"><a href="index.html">Summary</a><a href="slides.html" aria-current="page">Slides</a><a href="files/FRC_PCH_2027_Competitive_Outlook.ods" download>Workbook (.ods)</a><a href="files/FRC_PCH_2027_Competitive_Outlook.xlsx" download>Workbook (.xlsx)</a></div></nav>
+<div class="viewer">
+<div class="frame" id="frame"><div class="stage" id="stage">
+<section id="cover" class="slide" aria-roledescription="slide" aria-label="Slide 1 of 5" data-transition="fade" style="background:#14213d; color:#f4f1ea; font-family:'Public Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; justify-content:space-between">
+  <p style="font-size:28px; font-weight:600; letter-spacing:4px; color:#f2a65a">3329 WILDBOTS · 2027 PCH EVENT SELECTION</p>
+  <div style="display:flex; flex-direction:column; gap:40px">
+    <h1 style="font-family:'Oswald', Arial, sans-serif; font-size:120px; font-weight:600; line-height:1.05">Round 1: rank Albany first,<br>Dalton second</h1>
+    <p style="font-size:40px; line-height:1.4; width:1400px">Target outcome: Gainesville + Albany. 66 expected district points, 11 days between events, 10 days before Macon.</p>
+  </div>
+  <div style="display:flex; gap:24px">
+    <div style="background:#e07a1f; color:#14213d; padding:20px 32px; border-radius:12px"><p style="font-size:28px; font-weight:700">Round 1 preferences: Sep 24 – Oct 1, noon ET</p></div>
+    <div style="border:2px solid #f2a65a; padding:20px 32px; border-radius:12px"><p style="font-size:28px; font-weight:600">Round 2 preferences: Oct 15 – 22, noon ET</p></div>
+  </div>
+  <p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#a9b3c7">Prepared Sept 23, 2026 · 2026 results and the official 2027 PCH schedule</p>
+  <aside class="notes">The ask today: agree on our Round 1 preference list before the window closes Oct 1 at noon ET. The lottery runs after that deadline; entering early gives no advantage. Albany first, Dalton second, then Gainesville, then Gwinnett. Douglasville stays off. The best realistic season is Gainesville in Week 2 and Albany in Week 4.</aside>
+</section><section id="schedule" class="slide" aria-roledescription="slide" aria-label="Slide 2 of 5" data-transition="fade" style="background:#f4f1ea; color:#1d2433; font-family:'Public Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+  <h2 style="font-family:'Oswald', Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1">The 2027 schedule and our two time rules</h2>
+  <div style="display:flex; gap:16px">
+    <div style="flex:1; background:#ffffff; border:1px solid #d9d4c7; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700; color:#8a5a14">WEEK 1 · MAR 4–6</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">Dalton</h3><p style="font-size:26px">30 pts expected</p><p style="font-size:24px; color:#5b6474">6.3 h drive</p></div>
+    <div style="flex:1; background:#ffffff; border:1px solid #d9d4c7; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700; color:#8a5a14">WEEK 2 · MAR 11–13</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">Gainesville</h3><p style="font-size:26px">32 pts expected</p><p style="font-size:24px; color:#5b6474">5.2 h drive</p></div>
+    <div style="flex:1; background:#ffffff; border:1px solid #d9d4c7; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700; color:#8a5a14">WEEK 3 · MAR 19–21</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">Gwinnett</h3><p style="font-size:26px">30 pts expected</p><p style="font-size:24px; color:#5b6474">4.9 h drive</p></div>
+    <div style="flex:1; background:#14213d; color:#f4f1ea; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700; color:#f2a65a">WEEK 4 · MAR 25–27</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">Albany</h3><p style="font-size:26px">34 pts expected</p><p style="font-size:24px; color:#c7cfdd">3.1 h drive</p></div>
+    <div style="flex:1; background:#ffffff; border:2px dashed #b8b1a1; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700; color:#8a5a14">WEEK 5 · APR 1–3</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">Douglasville</h3><p style="font-size:26px">38 pts expected</p><p style="font-size:24px; color:#5b6474">5.2 h · new venue</p></div>
+    <div style="flex:1; background:#e07a1f; color:#14213d; border-radius:14px; padding:28px; display:flex; flex-direction:column; gap:10px">
+      <p style="font-size:24px; font-weight:700">WEEK 6 · APR 7–9</p><h3 style="font-family:'Oswald', Arial, sans-serif; font-size:36px; font-weight:600">DCMP, Macon</h3><p style="font-size:26px">Top ~45 teams</p><p style="font-size:24px">3.6 h drive</p></div>
+  </div>
+  <div style="display:flex; gap:32px">
+    <div style="flex:1; border-left:8px solid #e07a1f; padding:8px 32px; display:flex; flex-direction:column; gap:8px"><h3 style="font-size:32px; font-weight:700">At least 7 clear days between events</h3><p style="font-size:26px; line-height:1.4">Rules out back-to-back weeks (3–5 days to rebuild).</p></div>
+    <div style="flex:1; border-left:8px solid #e07a1f; padding:8px 32px; display:flex; flex-direction:column; gap:8px"><h3 style="font-size:32px; font-weight:700">At least 7 clear days before Macon</h3><p style="font-size:26px; line-height:1.4">Rules out Douglasville: it ends Apr 3, four days before DCMP.</p></div>
+  </div>
+  <p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5b6474">Expected points from forecast field strength vs 3329's 2026 form. Columbus is gone for 2027. Drive times from Kingsland, one way.</p>
+  <aside class="notes">Expected points depend on how many forecast teams are stronger than us at each event: fewer stronger teams, better seed and playoff odds. Douglasville looks softest on paper, but it's a brand-new event with no history and sits the week before Macon. The 2026 DCMP cut was about 50 points; we earned 64.</aside>
+</section><section id="options" class="slide" aria-roledescription="slide" aria-label="Slide 3 of 5" data-transition="fade" style="background:#f4f1ea; color:#1d2433; font-family:'Public Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:40px">
+  <h2 style="font-family:'Oswald', Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1">All ten pairs: only three pass both rules</h2>
+  <table style="width:1664px; border-collapse:collapse">
+    <tr><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Event pair</th><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Expected pts</th><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Days between</th><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Days before DCMP</th><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Round-trip drive</th><th style="padding:10px 20px; font-size:24px; font-weight:700; text-align:left; color:#f4f1ea; background:#14213d">Verdict</th></tr>
+    <tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Albany + Douglasville</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">72</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">4</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">3</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">16.5 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails both</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Gainesville + Douglasville</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">71</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">18</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">3</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">20.8 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails Macon rule</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Dalton + Douglasville</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">69</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">25</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">3</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">23.1 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails Macon rule</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Gwinnett + Douglasville</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">69</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">10</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">3</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">20.2 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails Macon rule</td></tr><tr style="background:#f6c89a"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700">Gainesville + Albany</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700">66</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700; ">11</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700; ">10</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700">16.6 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:700; color:#14213d">Target outcome</td></tr><tr style="background:#dcebe4"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Dalton + Albany</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">64</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">18</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">10</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">18.8 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#14213d">Passes</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Gwinnett + Albany</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">64</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">3</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">10</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">16.0 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails rebuild rule</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Dalton + Gainesville</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">63</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">4</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">16</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">23.1 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails rebuild rule</td></tr><tr style="background:#f4f1ea"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Gainesville + Gwinnett</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">63</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#b0321f; font-weight:700">5</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">16</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">20.3 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#8a2a1c">Fails rebuild rule</td></tr><tr style="background:#dcebe4"><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">Dalton + Gwinnett</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">61</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">12</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; ">16</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400">22.5 h</td><td style="padding:10px 20px; font-size:26px; border-bottom:1px solid #d9d4c7; font-weight:400; color:#14213d">Passes</td></tr>
+  </table>
+  <p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5b6474">Red numbers break a rule. Estimated DCMP cut ≈ 50 pts; safety target 60. Model error ≈ ±9 pts per event.</p>
+  <aside class="notes">The four highest-scoring pairs all use Douglasville, which leaves four days before Macon. Of the three pairs that pass both rules, Gainesville plus Albany scores highest and drives least. Dalton plus Albany is only about two points behind, well within the model's error, and gives the most rebuild time. Dalton plus Gwinnett is the fallback if Albany fills.</aside>
+</section><section id="plan" class="slide" aria-roledescription="slide" aria-label="Slide 4 of 5" data-transition="fade" style="background:#e9edf3; color:#1d2433; font-family:'Public Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:48px">
+  <h2 style="font-family:'Oswald', Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1">Round 2 picks follow the Round 1 result</h2>
+  <div style="background:#14213d; color:#f4f1ea; border-radius:16px; padding:28px 40px; display:flex; align-items:center; gap:40px">
+    <p style="font-size:24px; font-weight:700; color:#f2a65a; width:420px">ROUND 1 PREFERENCES<br>SEP 24 – OCT 1, NOON ET</p>
+    <p style="font-family:'Oswald', Arial, sans-serif; font-size:34px; font-weight:500">1 Albany (W4)  ·  2 Dalton (W1)  ·  3 Gainesville (W2)  ·  4 Gwinnett (W3)</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-size:24px; font-weight:700; color:#8a5a14">ROUND 2 PREFERENCES · OCT 15 – 22, NOON ET · RANKED BY ROUND 1 PLACEMENT</p>
+    <div style="display:flex; gap:32px">
+      <div style="flex:1; background:#ffffff; border-top:10px solid #e07a1f; border-radius:12px; padding:28px 32px; display:flex; flex-direction:column; gap:12px">
+        <h3 style="font-size:32px; font-weight:700">Placed at Albany</h3>
+        <ol style="font-size:26px; line-height:1.5; padding-left:36px">
+          <li><b>Gainesville</b> · 66 pts · 11 days apart</li>
+          <li><b>Dalton</b> · 64 pts · 18 days apart</li>
+          <li><span style="color:#6a7282">Gwinnett · 64 pts · 3 days apart</span></li>
+        </ol>
+        <p style="font-size:24px; color:#8a2a1c">Never Douglasville: breaks both rules</p>
+      </div>
+      <div style="flex:1; background:#ffffff; border-top:10px solid #2a7f6a; border-radius:12px; padding:28px 32px; display:flex; flex-direction:column; gap:12px">
+        <h3 style="font-size:32px; font-weight:700">Placed at Dalton</h3>
+        <ol style="font-size:26px; line-height:1.5; padding-left:36px">
+          <li><b>Albany</b> · 64 pts · 18 days apart</li>
+          <li><b>Gwinnett</b> · 61 pts · 12 days apart</li>
+          <li><span style="color:#6a7282">Gainesville · 63 pts · 4 days apart</span></li>
+          <li><span style="color:#6a7282">Douglasville · 69 pts · 3 days pre-Macon</span></li>
+        </ol>
+      </div>
+      <div style="flex:1; background:#ffffff; border-top:10px solid #8a93a3; border-radius:12px; padding:28px 32px; display:flex; flex-direction:column; gap:12px">
+        <h3 style="font-size:32px; font-weight:700">Placed at Gainesville</h3>
+        <ol style="font-size:26px; line-height:1.5; padding-left:36px">
+          <li><b>Albany</b> · 66 pts · 11 days apart</li>
+          <li><span style="color:#6a7282">Dalton · 63 pts · 4 days apart</span></li>
+          <li><span style="color:#6a7282">Gwinnett · 63 pts · 5 days apart</span></li>
+          <li><span style="color:#6a7282">Douglasville · 71 pts · 3 days pre-Macon</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#5b6474">Grey picks break a time rule; listed only to avoid a waitlist. Late registration for open slots: Oct 2 and Oct 23.</p>
+  <aside class="notes">Round 1: Albany first because it is in both best plans and has the fewest slots; Dalton second because it pairs with Albany or Gwinnett. Round 2 depends on where Round 1 places us. Placed at Albany: Gainesville, then Dalton, then Gwinnett as a last resort, and never Douglasville. Placed at Dalton: Albany, then Gwinnett, then Gainesville, then Douglasville. Gainesville beats Douglasville there because two early events still leave 16 days before Macon. Every listed pair clears the roughly 50-point DCMP cut.</aside>
+</section><section id="next" class="slide" aria-roledescription="slide" aria-label="Slide 5 of 5" data-transition="fade" style="background:#14213d; color:#f4f1ea; font-family:'Public Sans', Arial, sans-serif; padding:128px 128px 160px; display:flex; flex-direction:column; gap:56px">
+  <h2 style="font-family:'Oswald', Arial, sans-serif; font-size:72px; font-weight:600; line-height:1.1">Dates to hit and what could change the plan</h2>
+  <div style="display:flex; gap:24px">
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; border-top:6px solid #e07a1f; padding-top:24px"><p style="font-family:'Oswald', Arial, sans-serif; font-size:44px; font-weight:600; color:#f2a65a">Sep 24 – Oct 1</p><p style="font-size:26px; line-height:1.4">Round 1 preference window; closes noon ET</p></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; border-top:6px solid #8a93a3; padding-top:24px"><p style="font-family:'Oswald', Arial, sans-serif; font-size:44px; font-weight:600; color:#f4f1ea">Oct 2</p><p style="font-size:26px; line-height:1.4">Round 1 lottery done; late registration for open slots</p></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; border-top:6px solid #e07a1f; padding-top:24px"><p style="font-family:'Oswald', Arial, sans-serif; font-size:44px; font-weight:600; color:#f2a65a">Oct 15 – 22</p><p style="font-size:26px; line-height:1.4">Round 2 preference window; closes noon ET</p></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; border-top:6px solid #8a93a3; padding-top:24px"><p style="font-family:'Oswald', Arial, sans-serif; font-size:44px; font-weight:600; color:#f4f1ea">Oct 23</p><p style="font-size:26px; line-height:1.4">Round 2 lottery done; late registration for open slots</p></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:12px; border-top:6px solid #8a93a3; padding-top:24px"><p style="font-family:'Oswald', Arial, sans-serif; font-size:44px; font-weight:600; color:#f4f1ea">Nov 17</p><p style="font-size:26px; line-height:1.4">Registration closes; payment due</p></div>
+  </div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px 48px">
+    <div style="display:flex; flex-direction:column; gap:6px"><h3 style="font-size:30px; font-weight:700">Home-event rules</h3><p style="font-size:26px; line-height:1.4; color:#c7cfdd">Confirm with GeorgiaFIRST whether PCH uses one.</p></div>
+    <div style="display:flex; flex-direction:column; gap:6px"><h3 style="font-size:30px; font-weight:700">A new game</h3><p style="font-size:26px; line-height:1.4; color:#c7cfdd">Points are 2026-based; treat them as a ranking.</p></div>
+    <div style="display:flex; flex-direction:column; gap:6px"><h3 style="font-size:30px; font-weight:700">Full events</h3><p style="font-size:26px; line-height:1.4; color:#c7cfdd">Every event is forecast near capacity; backups will likely matter.</p></div>
+    <div style="display:flex; flex-direction:column; gap:6px"><h3 style="font-size:30px; font-weight:700">Rebuild threshold</h3><p style="font-size:26px; line-height:1.4; color:#c7cfdd">If we need 12+ days between events, Dalton leads Round 2.</p></div>
+  </div>
+  <p style="position:absolute; left:128px; bottom:64px; width:1664px; font-size:24px; color:#a9b3c7">Sources: FIRST 2027 Season Event List; 2026 PCH district rankings; FIRST Event Preferencing and Calendar pages.</p>
+  <aside class="notes">Decision needed tonight or this week: approve the Round 1 list. After Round 1 results post, we pick the matching Round 2 list; each branch is already worked out on the previous slide.</aside>
+</section>
+</div></div>
+<div class="controls">
+<button id="prev" type="button">Previous</button>
+<span id="count" aria-live="polite">1 / 5</span>
+<button id="next" type="button">Next</button>
+<button id="notes-btn" type="button" aria-expanded="false" aria-controls="notes-panel">Show speaker notes</button>
+</div>
+<div id="notes-panel" hidden></div>
+<p style="color:#8f9bb3;font-size:14px;margin:14px 0 0">Arrow keys move between slides. Print this page to save a PDF with one slide per page.</p>
+</div>
+<script>
+(function(){
+ var slides=[].slice.call(document.querySelectorAll('.slide')),i=0,stage=document.getElementById('stage'),frame=document.getElementById('frame');
+ var prev=document.getElementById('prev'),next=document.getElementById('next'),count=document.getElementById('count');
+ var nb=document.getElementById('notes-btn'),np=document.getElementById('notes-panel');
+ function fit(){stage.style.transform='scale('+(frame.clientWidth/1920)+')';}
+ function show(n){
+  i=Math.max(0,Math.min(slides.length-1,n));
+  slides.forEach(function(s,k){s.hidden=k!==i;});
+  count.textContent=(i+1)+' / '+slides.length; prev.disabled=i===0; next.disabled=i===slides.length-1;
+  var a=slides[i].querySelector('.notes'); np.textContent=a?a.textContent:'No notes for this slide.';
+  if(location.hash!=='#'+(i+1)) history.replaceState(null,'','#'+(i+1));
+ }
+ prev.onclick=function(){show(i-1);}; next.onclick=function(){show(i+1);};
+ nb.onclick=function(){var open=np.hidden; np.hidden=!open; nb.setAttribute('aria-expanded',open); nb.textContent=open?'Hide speaker notes':'Show speaker notes';};
+ document.addEventListener('keydown',function(e){
+  if(e.target.closest&&e.target.closest('button'))if(e.key===' '||e.key==='Enter')return;
+  if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1);}
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1);}
+  else if(e.key==='Home')show(0); else if(e.key==='End')show(slides.length-1);
+ });
+ window.addEventListener('resize',fit); fit();
+ var h=parseInt(location.hash.slice(1),10); show(isNaN(h)?0:h-1);
+})();
+</script>
+</body></html>
