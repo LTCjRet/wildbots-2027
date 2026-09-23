@@ -22,7 +22,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 .hero p{font-size:clamp(17px,1.6vw,20px);max-width:36em;margin:0;color:#d4dae5}
 .deadline{margin-top:28px;display:inline-block;background:var(--orange);color:var(--ink);font-weight:700;padding:10px 18px;border-radius:6px}
 .lineup{list-style:none;margin:0;padding:0;border-top:2px solid #f3f5f9}
-.lineup li{display:grid;grid-template-columns:3.2ch 1fr auto;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid #3a4866}
+.lineup li{display:grid;grid-template-columns:3.2ch 1fr auto;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid #3a4866}
 .lineup .n{font-family:'Oswald',Arial,sans-serif;font-size:clamp(28px,3vw,40px);color:var(--orange)}
 .lineup .ev{font-family:'Oswald',Arial,sans-serif;font-size:clamp(28px,3.4vw,46px);font-weight:500;line-height:1.1}
 .lineup .wk{color:#b9c2d3;font-size:15px;text-align:right}
@@ -41,6 +41,26 @@ td.bad{color:var(--red);font-weight:600}
 td.ok{color:var(--green);font-weight:600}
 td.target{color:var(--orange-ink);font-weight:700}
 tr.target-row td{background:#fdecdc}
+.lineup-h{font-family:'Oswald',Arial,sans-serif;font-weight:500;font-size:22px;margin:0 0 12px;color:#f3f5f9}
+.hero-r2{margin-top:32px;border:1px solid #3a4866;border-radius:10px;padding:18px 20px;background:#1b2a4a}
+.hero-r2 h2{font-family:'Oswald',Arial,sans-serif;font-weight:500;font-size:22px;margin:0 0 10px;color:#f3f5f9}
+.hero-r2 dl{margin:0;display:grid;gap:6px}
+.hero-r2 dl div{display:grid;grid-template-columns:minmax(0,11em) 1fr;gap:12px;font-size:16px}
+.hero-r2 dt{color:#b9c2d3}
+.hero-r2 dd{margin:0;font-weight:600;color:#f3f5f9}
+.hero-r2 a{display:inline-block;margin-top:12px;color:#ffd2a8;font-size:15px;font-weight:600}
+.r2-title{font-family:'Oswald',Arial,sans-serif;font-weight:500;font-size:24px;margin:28px 0 12px;scroll-margin-top:16px}
+.r2-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;width:min(100vw - 40px,1052px)}
+.r2-card{background:var(--card);border:1px solid var(--line);border-top:8px solid var(--ink);border-radius:8px;padding:18px 20px}
+.r2-card.albany{border-top-color:var(--orange)} .r2-card.dalton{border-top-color:var(--green)} .r2-card.gainesville{border-top-color:#8a93a3}
+.r2-card h4{font-family:'Oswald',Arial,sans-serif;font-weight:500;font-size:22px;margin:0 0 10px}
+.r2-card ol{margin:0;padding-left:1.4em;display:grid;gap:10px}
+.r2-card li strong{display:block;font-size:17px}
+.r2-card li span{display:block;font-size:14px;color:var(--muted);line-height:1.4}
+.r2-card li.fallback strong{color:#6a7282;font-weight:600}
+.r2-card .never{margin:12px 0 0;font-size:14px;color:var(--red);font-weight:600}
+.r2-key{font-size:15px;color:var(--muted)}
+@media (max-width:820px){.r2-cards{grid-template-columns:1fr}}
 footer{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 48px;color:var(--muted);font-size:14px}
 @media (max-width:820px){.hero-inner{grid-template-columns:1fr;align-items:start}}
 @media print{.site-nav{display:none}.hero{background:#fff;color:var(--ink)}.hero p,.lineup .wk,.lineup-cap{color:var(--muted)}.table-wrap{width:100%;overflow:visible}}
@@ -50,12 +70,19 @@ footer{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 48px;color:
 <div><h1>Rank Albany first and Dalton second in Round 1</h1>
 <p>Team 3329's plan for the 2027 Peachtree District season: the most district points we can expect while keeping at least a week to rebuild before our second event and before the District Championship in Macon.</p>
 <span class="deadline">Round 1 preferences close Oct 1, 2026, noon ET</span></div>
-<div><ol class="lineup" aria-label="Round 1 preference list">
+<div><h2 class="lineup-h">Round 1 preference list, Sep 24 – Oct 1</h2><ol class="lineup" aria-label="Round 1 preference list">
 <li><span class="n">1</span><span class="ev">Albany</span><span class="wk">Week 4, Mar 25–27</span></li>
 <li><span class="n">2</span><span class="ev">Dalton</span><span class="wk">Week 1, Mar 4–6</span></li>
 <li><span class="n">3</span><span class="ev">Gainesville</span><span class="wk">Week 2, Mar 11–13</span></li>
 <li><span class="n">4</span><span class="ev">Gwinnett</span><span class="wk">Week 3, Mar 19–21</span></li></ol>
-<p class="lineup-cap">Target season: Gainesville + Albany, about 66 expected district points.</p></div>
+<p class="lineup-cap">Target season: Gainesville + Albany, about 66 expected district points.</p>
+<div class="hero-r2"><h2>Round 2, by where Round 1 places us</h2>
+<dl>
+<div><dt>Placed at Albany</dt><dd>1 Gainesville, 2 Dalton</dd></div>
+<div><dt>Placed at Dalton</dt><dd>1 Albany, 2 Gwinnett</dd></div>
+<div><dt>Placed at Gainesville</dt><dd>1 Albany, 2 Dalton</dd></div>
+</dl>
+<a href="#round-2">Full Round 2 lists and fallbacks</a></div></div>
 </div></header>
 <main><article><h2>Recommendation</h2>
 <p>In Round 1 (first event, closes Oct 1), rank <strong>Albany first and Dalton second</strong>. Albany anchors the two best plans and is the event most likely to fill (29 slots, forecast 28 teams).</p>
@@ -66,121 +93,28 @@ footer{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 48px;color:
 <li>Gainesville, Week 2 (Mar 11–13)</li>
 <li>Gwinnett, Week 3 (Mar 19–21)</li>
 </ol>
-<p><strong>Round 2 ranked lists (Oct 15 – 22, 2026, noon ET), by Round 1 placement:</strong></p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Round 1 placement</th>
-<th>Round 2 rank</th>
-<th>Event</th>
-<th>Expected pre-DCMP points</th>
-<th>Days between events</th>
-<th>Days before DCMP</th>
-<th>Note</th>
-</tr>
-</thead>
-<tbody>
-<tr class="target-row">
-<td>Albany</td>
-<td>1</td>
-<td>Gainesville (W2)</td>
-<td>66</td>
-<td>11</td>
-<td>10</td>
-<td class="target">Target outcome</td>
-</tr>
-<tr>
-<td>Albany</td>
-<td>2</td>
-<td>Dalton (W1)</td>
-<td>64</td>
-<td>18</td>
-<td>10</td>
-<td class="ok">Passes both rules</td>
-</tr>
-<tr>
-<td>Albany</td>
-<td>3</td>
-<td>Gwinnett (W3)</td>
-<td>64</td>
-<td>3</td>
-<td>10</td>
-<td class="bad">Last resort; breaks rebuild rule</td>
-</tr>
-<tr>
-<td>Dalton</td>
-<td>1</td>
-<td>Albany (W4)</td>
-<td>64</td>
-<td>18</td>
-<td>10</td>
-<td class="ok">Passes both rules</td>
-</tr>
-<tr>
-<td>Dalton</td>
-<td>2</td>
-<td>Gwinnett (W3)</td>
-<td>61</td>
-<td>12</td>
-<td>16</td>
-<td class="ok">Passes both rules</td>
-</tr>
-<tr>
-<td>Dalton</td>
-<td>3</td>
-<td>Gainesville (W2)</td>
-<td>63</td>
-<td>4</td>
-<td>16</td>
-<td class="bad">Breaks rebuild rule</td>
-</tr>
-<tr>
-<td>Dalton</td>
-<td>4</td>
-<td>Douglasville (W5)</td>
-<td>69</td>
-<td>25</td>
-<td>3</td>
-<td class="bad">Breaks Macon rule</td>
-</tr>
-<tr class="target-row">
-<td>Gainesville</td>
-<td>1</td>
-<td>Albany (W4)</td>
-<td>66</td>
-<td>11</td>
-<td>10</td>
-<td class="target">Target outcome</td>
-</tr>
-<tr>
-<td>Gainesville</td>
-<td>2</td>
-<td>Dalton (W1)</td>
-<td>63</td>
-<td>4</td>
-<td>16</td>
-<td class="bad">Breaks rebuild rule</td>
-</tr>
-<tr>
-<td>Gainesville</td>
-<td>3</td>
-<td>Gwinnett (W3)</td>
-<td>63</td>
-<td>5</td>
-<td>16</td>
-<td class="bad">Breaks rebuild rule</td>
-</tr>
-<tr>
-<td>Gainesville</td>
-<td>4</td>
-<td>Douglasville (W5)</td>
-<td>71</td>
-<td>18</td>
-<td>3</td>
-<td class="bad">Breaks Macon rule</td>
-</tr>
-</tbody>
-</table></div>
+<h3 id="round-2" class="r2-title">Round 2 ranked lists (Oct 15 – 22, 2026, noon ET), by Round 1 placement</h3>
+<div class="r2-cards">
+<section class="r2-card albany"><h4>Placed at Albany</h4><ol>
+<li><strong>Gainesville</strong><span>66 pts · 11 days apart · target outcome</span></li>
+<li><strong>Dalton</strong><span>64 pts · 18 days apart</span></li>
+<li class="fallback"><strong>Gwinnett</strong><span>64 pts · only 3 days apart (last resort)</span></li>
+</ol><p class="never">Never list Douglasville: it breaks both rules.</p></section>
+<section class="r2-card dalton"><h4>Placed at Dalton</h4><ol>
+<li><strong>Albany</strong><span>64 pts · 18 days apart</span></li>
+<li><strong>Gwinnett</strong><span>61 pts · 12 days apart</span></li>
+<li class="fallback"><strong>Gainesville</strong><span>63 pts · only 4 days apart</span></li>
+<li class="fallback"><strong>Douglasville</strong><span>69 pts · 3 days before Macon</span></li>
+</ol></section>
+<section class="r2-card gainesville"><h4>Placed at Gainesville</h4><ol>
+<li><strong>Albany</strong><span>66 pts · 11 days apart · target outcome</span></li>
+<li class="fallback"><strong>Dalton</strong><span>63 pts · only 4 days apart</span></li>
+<li class="fallback"><strong>Gwinnett</strong><span>63 pts · only 5 days apart</span></li>
+<li class="fallback"><strong>Douglasville</strong><span>71 pts · 3 days before Macon</span></li>
+</ol></section>
+</div>
+<p class="r2-key">Picks in grey break one of the time rules (7 clear days between events, 7 before Macon). They are listed only so the team isn't waitlisted.</p>
+
 <p>The target outcome is <strong>Gainesville + Albany: 66 expected points, 11 days between events, 10 days before Macon, and 16.6 h of round-trip driving</strong>. Every listed pair clears the estimated DCMP cut of about 50 points. Picks that break a time rule are listed only to avoid being waitlisted.</p>
 <p>Where both fallbacks break a rule, a short rebuild gap ranks above Douglasville: two early events still leave 16 days before Macon, while Douglasville leaves 3. Never list Douglasville when placed at Albany; that pair breaks both rules.</p>
 <h2>Decision criteria</h2>
